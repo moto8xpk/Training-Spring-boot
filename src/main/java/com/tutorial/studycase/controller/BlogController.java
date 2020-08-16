@@ -42,10 +42,17 @@ public class BlogController {
         return new ResponseEntity<>("blog is created successfully", HttpStatus.CREATED);
     }
 
-//    public ResponseEntity<Object> updateProduct(@PathVariable("id") String id) {
-//    }
-//
-//    public ResponseEntity<Object> getProduct(
-//            @RequestParam(value = "name", required = false, defaultValue = "honey") String name) {
-//    }
+    @RequestMapping(value = "/blogs/{id}", method = RequestMethod.PUT)
+    public ResponseEntity<Object> updateBlog(@PathVariable("id") String id, @RequestBody Blog blog) {
+        blogRepo.remove(id);
+        blog.setId(Long.valueOf(id));
+        blogRepo.put(id, blog);
+        return new ResponseEntity<>("blog is updated successsfully", HttpStatus.OK);
+    }
+
+    @RequestMapping(value = "/blogs/{id}", method = RequestMethod.DELETE)
+    public ResponseEntity<Object> delete(@PathVariable("id") String id) {
+        blogRepo.remove(id);
+        return new ResponseEntity<>("blog is deleted successsfully", HttpStatus.OK);
+    }
 }
