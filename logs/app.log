@@ -1,0 +1,7 @@
+2020-08-16 17:28:11,309 INFO com.tutorial.studycase.StudyCaseApplication [restartedMain] Starting StudyCaseApplication on DESKTOP-T8C4SEC with PID 31484 (C:\Users\Acer\Desktop\begining-project-spring-boot\Training-Spring-boot\target\classes started by Acer in C:\Users\Acer\Desktop\begining-project-spring-boot\Training-Spring-boot)
+2020-08-16 17:28:11,313 DEBUG com.tutorial.studycase.StudyCaseApplication [restartedMain] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-08-16 17:28:11,314 INFO com.tutorial.studycase.StudyCaseApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-08-16 17:28:14,842 INFO com.tutorial.studycase.StudyCaseApplication [restartedMain] Started StudyCaseApplication in 4.576 seconds (JVM running for 6.807)
+2020-08-16 17:28:14,847 INFO com.tutorial.studycase.StudyCaseApplication [restartedMain] this is a info message
+2020-08-16 17:28:14,847 WARN com.tutorial.studycase.StudyCaseApplication [restartedMain] this is a warn message
+2020-08-16 17:28:14,847 ERROR com.tutorial.studycase.StudyCaseApplication [restartedMain] this is a error message
