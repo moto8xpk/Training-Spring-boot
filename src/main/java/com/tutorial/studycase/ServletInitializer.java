@@ -7,7 +7,7 @@ public class ServletInitializer extends SpringBootServletInitializer {
 
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-        return application.sources(StudyCaseApplication.class).properties("application.yml");
+        return application.sources(StudyCaseApplication.class);
     }
 
 }

@@ -1,4 +1,7 @@
 spring:
+  application:
+        name: demoservice
+        news: null
   profiles:
       active: dev
   datasource:
