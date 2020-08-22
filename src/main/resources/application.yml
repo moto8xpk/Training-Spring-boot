@@ -1,2 +1,5 @@
-server: 
-   port: 9091
+#server:
+#   port: 9091
+# test random port
+server:
+   port: 0
