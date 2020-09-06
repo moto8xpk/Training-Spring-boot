@@ -5,8 +5,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class BlogController {
-    @RequestMapping(value = "/")
-    public String hello() {
-        return "Hello World";
+    @RequestMapping(value = "/index")
+    public String index() {
+        return "index";
     }
 }
