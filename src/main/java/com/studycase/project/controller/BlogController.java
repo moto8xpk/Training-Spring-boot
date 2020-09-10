@@ -6,7 +6,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class BlogController {
     @RequestMapping(value = "/")
-    public String hello() {
-        return "Hello World";
+    public String home() {
+        return "Eureka Client application";
     }
+
 }
