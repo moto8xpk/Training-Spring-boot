@@ -3,13 +3,14 @@ package com.tutorial.studycase;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
-public class StudyCaseApplication implements ApplicationRunner {
+public class StudyCaseApplication implements CommandLineRunner {
 
     @Autowired
     RestTemplate restTemplate;
@@ -19,14 +20,14 @@ public class StudyCaseApplication implements ApplicationRunner {
         SpringApplication.run(StudyCaseApplication.class, args);
     }
 
-    @Override
-    public void run(ApplicationArguments arg0) throws Exception {
-        //executed after run spring boot application
-        System.out.println("Hello World from Application Runner - executed after run spring boot application");
-    }
-
     @Bean
     public RestTemplate getRestTemplate() {
         return new RestTemplate();
+    }
+
+    @Override
+    public void run(String... args) throws Exception {
+        // this cmd run after tomcat started
+        System.out.println("Hello world from Command Line Runner");
     }
 }
